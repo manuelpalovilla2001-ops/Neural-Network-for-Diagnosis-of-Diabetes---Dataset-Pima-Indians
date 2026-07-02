@@ -65,7 +65,7 @@ El análisis confirmó que la glucosa es la variable más determinante (incremen
 ## Estructura del repositorio
 
 ```
-diabetes-neural-network/
+Neural-Network-for-Diagnosis-of-Diabetes---Dataset-Pima-Indians/
 │
 ├── diabetes_iia.py          # Código principal
 ├── diabetes.csv             # Dataset
@@ -87,7 +87,7 @@ diabetes-neural-network/
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/manuelpalovilla2001-ops/diabetes-neural-network.git
+git clone https://github.com/manuelpalovilla2001-ops/Neural-Network-for-Diagnosis-of-Diabetes---Dataset-Pima-Indians
 cd diabetes-neural-network
 
 # 2. Instalar dependencias
@@ -115,7 +115,7 @@ El script genera automáticamente todos los gráficos en la carpeta raíz.
 
 ## Limitaciones
 
-- El recall con umbral 0.5 es del 57.41%, lo que significa que el modelo no detecta aproximadamente 4 de cada 10 pacientes con diabetes. Para un uso clínico real, este número debería mejorar significativamente.
+- Inicialmente el recall con umbral 0.5 fue del 57.41%, lo que significa que el modelo no detecta aproximadamente 4 de cada 10 pacientes con diabetes. Para un uso clínico ideal se ajusto a un umbral del 0.3 obteniendo resultados en el recall significativamente superiores.
 - El conjunto de entrenamiento y validación son el mismo subconjunto (el 20% de prueba se usó como `validation_data` durante el entrenamiento). Para investigación más rigurosa, se debería usar validación cruzada estratificada de k-folds o una división en tres conjuntos separados.
 
 ---
